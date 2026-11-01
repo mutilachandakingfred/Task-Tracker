@@ -55,39 +55,40 @@ def update_task():
             print("4. Due Date")
             print("5. Priority")
             print("6. Status")
-        choose_part_to_change = int(input("Enter your option here>>>"))
-        if choose_part_to_change == 1:
-            new_title = input("Enter the new title>>>")
-            task['title'] = new_title
-            print("Title updated successfully!")
+            choose_part_to_change = int(input("Enter your option here>>>"))
+            if choose_part_to_change == 1:
+                new_title = input("Enter the new title>>>")
+                task['title'] = new_title
+                print("Title updated successfully!")
 
-        elif choose_part_to_change == 2:
-            new_course = input("Enter the new course>>>")
-            task['course'] = new_course
-            print("Course updated successfully!")
+            elif choose_part_to_change == 2:
+                new_course = input("Enter the new course>>>")
+                task['course'] = new_course
+                print("Course updated successfully!")
 
-        elif choose_part_to_change == 3:
-            new_description = input("Enter the new description>>>")
-            task['description'] = new_description
-            print("Description updated successfully!")
+            elif choose_part_to_change == 3:
+                new_description = input("Enter the new description>>>")
+                task['description'] = new_description
+                print("Description updated successfully!")
 
-        elif choose_part_to_change == 4:
-            new_due_date = input("Enter the new due date (YYYY-MM-DD)>>>")
-            task['due_date'] = new_due_date
-            print("Due date updated successfully!")
+            elif choose_part_to_change == 4:
+                new_due_date = input("Enter the new due date (YYYY-MM-DD)>>>")
+                task['due_date'] = new_due_date
+                print("Due date updated successfully!")
 
-        elif choose_part_to_change == 5:
-            new_priority = input("Enter the new priority (High, Medium, Low)>>>")
-            task['priority'] = new_priority
-            print("Priority updated successfully!")
+            elif choose_part_to_change == 5:
+                new_priority = input("Enter the new priority (High, Medium, Low)>>>")
+                task['priority'] = new_priority
+                print("Priority updated successfully!")
 
-        elif choose_part_to_change == 6:
-            new_status = input("Enter the new status (Pending, Completed)>>>")
-            task['status'] = new_status
-            print("Status updated successfully!")
+            elif choose_part_to_change == 6:
+                new_status = input("Enter the new status (Pending, Completed)>>>")
+                task['status'] = new_status
+                print("Status updated successfully!")
 
-        else:
-            print("Invalid option. Please enter a number between 1 and 6.")        
+            else:
+               print("Invalid option. Please enter a number between 1 and 6.")        
+            return
 
     else:
         print("Invalid task ID. Please enter a valid task ID.")
