@@ -1,3 +1,6 @@
+from storage import load_tasks, save_tasks
+
+tasks = load_tasks()
 
 def add_task():
     # Function to add a new task
@@ -18,6 +21,7 @@ def add_task():
         "status": status
     }
     tasks.append(task)
+    save_tasks(tasks)  # Save the updated tasks to the JSON file
     print("Task added successfully!")
 
 
@@ -87,9 +91,13 @@ def update_task():
                 print("Status updated successfully!")
 
             else:
-               print("Invalid option. Please enter a number between 1 and 6.")        
+               print("Invalid option. Please enter a number between 1 and 6.")
+               return       
+
+            save_tasks(tasks)  # Save the updated tasks to the JSON file
             return
 
+            
     else:
         print("Invalid task ID. Please enter a valid task ID.")
         return
@@ -109,6 +117,7 @@ def delete_task():
         if choose_task == task['id']:
             tasks.remove(task)
             print("Task deleted successfully!")
+            save_tasks(tasks)  # Save the updated tasks to the JSON file
             return
     else:
         print("Invalid task ID. Please enter a valid task ID.")
@@ -127,6 +136,7 @@ def mark_task_completed():
     for task in tasks:
         if choose_task == task['id']:
             task['status'] = "Completed"
+            save_tasks(tasks)  # Save the updated tasks to the JSON file
             print("Task marked as completed successfully!")
             return
     else:
@@ -168,7 +178,7 @@ def view_completed_tasks():
             
 
 
-tasks = []
+
 
 def main():
     choice = 0
