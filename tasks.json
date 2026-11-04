@@ -1,1 +1,47 @@
-[]
+[
+    {
+        "id": 1,
+        "title": "Cyber Security Certificate",
+        "course": "Cyber Security",
+        "description": "I have to obtain a new cybersecurity certificate from CISCO",
+        "due_date": "2027-01-01",
+        "priority": "High",
+        "status": "Pending"
+    },
+    {
+        "id": 2,
+        "title": "Sing a Song",
+        "course": "Music 220",
+        "description": "Sing \"Give It Up\" from Victorious.",
+        "due_date": "2026-11-10",
+        "priority": "Low",
+        "status": "Completed"
+    },
+    {
+        "id": 4,
+        "title": "Work on the Math Tutorial Sheet",
+        "course": "Math 211",
+        "description": "Complete Math Tutorial sheet 2",
+        "due_date": "2026-11-15",
+        "priority": "High",
+        "status": "Pending"
+    },
+    {
+        "id": 5,
+        "title": "Button placement",
+        "course": "Clothes Making 301",
+        "description": "Learn how to properly place buttons on clothes.",
+        "due_date": "2027-01-05",
+        "priority": "Low",
+        "status": "Pending"
+    },
+    {
+        "id": 6,
+        "title": "Watch a Documentary",
+        "course": "History 207",
+        "description": "I have to watch a documentary on the Holocaust",
+        "due_date": "2026-12-12",
+        "priority": "Medium",
+        "status": "Completed"
+    }
+]
