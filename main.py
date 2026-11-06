@@ -7,7 +7,7 @@ tasks = load_tasks()
 def main():
     choice = 0
     while choice != 8:
-        print("***ACADEMIC TASK TRACKER***")
+        print("*************ACADEMIC TASK TRACKER *************")
         print("Welcome to the Academic Task Tracker")
         print("Choose an option below:")
         print("1. Add a new task")
@@ -19,9 +19,13 @@ def main():
         print("7. View completed tasks")
         print("8. Exit Program")
 
-        choice = int(input("Enter your choice (Between 1 and 8)>>> "))
 
-        
+        try:
+            choice = int(input("Enter your choice (Between 1 and 8)>>> "))
+        except ValueError:
+            print("Invalid input. Please enter a number between 1 and 8.")
+            continue
+
         if choice == 1:
                 add_task(tasks)
             
@@ -44,11 +48,12 @@ def main():
                 view_completed_tasks(tasks)
 
         elif choice == 8:
-            print("Exiting the program. Goodbye!")
+                print("Thank you for using the Academic Task Tracker")
+                print("Exiting the program. Goodbye!")
 
         else:
             print("Invalid choice. Please enter a number between 1 and 8.")
-    print("Thank you for using the Academic Task Tracker")
+    
 
 if __name__ == "__main__":
     main()

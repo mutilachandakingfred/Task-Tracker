@@ -43,5 +43,14 @@
         "due_date": "2026-12-12",
         "priority": "Medium",
         "status": "Completed"
+    },
+    {
+        "id": 7,
+        "title": "Advanced Databases",
+        "course": "CSC 3612",
+        "description": "I have to learn how to build and manage a database",
+        "due_date": "2026-11-17",
+        "priority": "High",
+        "status": "Pending"
     }
 ]
